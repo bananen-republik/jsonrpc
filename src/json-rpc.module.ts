@@ -7,4 +7,4 @@ import { JsonRpcClientService } from './json-rpc-client.service';
         JsonRpcClientService
     ]
 })
-export class NgToolsModule {};
+export class JsonRpcModule {};

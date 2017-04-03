@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var json_rpc_error_model_1 = require("./json-rpc-error.model");
 ;
 var JsonRpcResponse = (function () {

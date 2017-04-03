@@ -5,20 +5,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var json_rpc_client_service_1 = require("./json-rpc-client.service");
-var NgToolsModule = (function () {
-    function NgToolsModule() {
+var JsonRpcModule = (function () {
+    function JsonRpcModule() {
     }
-    return NgToolsModule;
+    return JsonRpcModule;
 }());
-NgToolsModule = __decorate([
+JsonRpcModule = __decorate([
     core_1.NgModule({
         providers: [
             json_rpc_client_service_1.JsonRpcClientService
         ]
     })
-], NgToolsModule);
-exports.NgToolsModule = NgToolsModule;
+], JsonRpcModule);
+exports.JsonRpcModule = JsonRpcModule;
 ;

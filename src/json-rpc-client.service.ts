@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, RequestOptions, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { JsonRpcRequest, JsonRpcRequestInterface } from './json-rpc-request.model';
-import { JsonRpcResponse, JsonRpcResponseInterface} from "./json-rpc-response.model";
+import { JsonRpcResponse } from "./json-rpc-response.model";
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/take';
 
