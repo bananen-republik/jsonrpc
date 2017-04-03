@@ -105,7 +105,3 @@ typings/
 
 
 .idea/
-index.js
-index.ts
-package.json
-src/

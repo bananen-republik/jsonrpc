@@ -1,0 +1,25 @@
+{
+  "name": "@bdf2ch/jsonrpc",
+  "version": "1.0.0",
+  "description": "JSON RPC 2.0 implementation for Angular2+.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdf2ch/jsonrpc.git"
+  },
+  "keywords": [
+    "jsonrpc",
+    "angular",
+    "angular2",
+    "json-rpc"
+  ],
+  "author": "bdf2ch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdf2ch/jsonrpc/issues"
+  },
+  "homepage": "https://github.com/bdf2ch/jsonrpc#readme"
+}
