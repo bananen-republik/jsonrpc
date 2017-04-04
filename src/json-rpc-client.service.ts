@@ -9,6 +9,8 @@ import 'rxjs/add/operator/take';
 
 @Injectable()
 export class JsonRpcClientService {
+    private response: JsonRpcResponse|null = null;
+
 
     /**
      * Constructor
