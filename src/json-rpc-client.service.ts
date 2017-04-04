@@ -45,7 +45,7 @@ export class JsonRpcClientService {
      */
     batch(url: string, requests: JsonRpcRequestInterface[]): Observable<JsonRpcResponse[]> {
         let headers = new Headers({ 'Content-Type': 'application/json' });
-        let options = RequestOptions({ headers: headers });
+        let options = new RequestOptions({ headers: headers });
 
         return this.$http.post(url, requests, options)
             .map((response: Response) => {

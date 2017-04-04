@@ -1,6 +1,6 @@
 {
   "name": "@bdf2ch/jsonrpc",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "JSON RPC 2.0 Client implementation for Angular2+.",
   "main": "index.js",
   "scripts": {
