@@ -9,8 +9,6 @@ import 'rxjs/add/operator/take';
 
 @Injectable()
 export class JsonRpcClientService {
-    private response: JsonRpcResponse|null = null;
-
 
     /**
      * Constructor
@@ -59,15 +57,6 @@ export class JsonRpcClientService {
                 return result;
             })
             .take(1);
-    };
-
-
-    /**
-     * Returns the last response
-     * @returns {JsonRpcResponse|null}
-     */
-    response(): JsonRpcResponse|null {
-        return this.response;
     };
 
 };
