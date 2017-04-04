@@ -24,10 +24,10 @@ export class JsonRpcClientService {
      * @param request {JsonRpcRequestIntarface} - Request options
      * @returns {Observable<T>}
      */
-    request(request: JsonRpcRequestInterface): Observable<JsonRpcResponse> {
+    request(url: string, request: JsonRpcRequestInterface): Observable<JsonRpcResponse> {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-        return this.$http.post('dsd', request, options)
+        return this.$http.post(url, request, options)
             .map((response: Response) => {
                 let body = response.json();
                 this.response = new JsonRpcResponse(body);
@@ -43,11 +43,11 @@ export class JsonRpcClientService {
      * @param requests {JsonRpcRequest[]} - array of requests
      * @returns {Observable<T>}
      */
-    batch(requests: JsonRpcRequestInterface[]): Observable<JsonRpcResponse[]> {
+    batch(url: string, requests: JsonRpcRequestInterface[]): Observable<JsonRpcResponse[]> {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = RequestOptions({ headers: headers });
 
-        return this.$http.post('ddd', requests, options)
+        return this.$http.post(url, requests, options)
             .map((response: Response) => {
                 let body = response.json();
                 let length = body.length;

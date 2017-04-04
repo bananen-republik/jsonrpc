@@ -1,11 +1,11 @@
 {
   "name": "@bdf2ch/jsonrpc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JSON RPC 2.0 Client implementation for Angular2+.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preversion": "echo \"preversion\" && git add -all",
+    "preversion": "echo \"preversion\" && git add --all",
     "version": "git add --all",
     "postversion": "git push github master"
   },
