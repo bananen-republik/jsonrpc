@@ -1,5 +1,5 @@
 /**
- * JSON RPC Error Interface
+ * JSON RPC Error interface
  */
 export interface JsonRpcErrorInterface {
     code: number;       // Error code
@@ -9,7 +9,7 @@ export interface JsonRpcErrorInterface {
 
 
 /**
- * JSON RPC Error Class
+ * JSON RPC Error class
  */
 export class JsonRpcError {
     code: number;           // Error code

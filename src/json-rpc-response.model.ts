@@ -1,6 +1,9 @@
 import {JsonRpcError, JsonRpcErrorInterface} from './json-rpc-error.model';
 
 
+/**
+ * JSON RPC Response interface
+ */
 export interface JsonRpcResponseInterface {
     jsonrpc: string;
     result?: any;
@@ -9,6 +12,9 @@ export interface JsonRpcResponseInterface {
 };
 
 
+/**
+ * JSON RPC Response class
+ */
 export class JsonRpcResponse {
     jsonrpc: string = '2.0';
 

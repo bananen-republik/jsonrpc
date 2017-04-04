@@ -1,3 +1,6 @@
+/**
+ * JSON RPC Request interface
+ */
 export interface JsonRpcRequestInterface {
     method: string;
     params?: any[]|{};
@@ -5,6 +8,9 @@ export interface JsonRpcRequestInterface {
 };
 
 
+/**
+ * JSON RPC Request class
+ */
 export class JsonRpcRequest {
     jsonrpc: string = '2.0';
     method: string = '';
